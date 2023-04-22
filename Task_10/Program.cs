@@ -6,7 +6,7 @@
 918 -> 1*/
 
 Console.WriteLine("Введите трёхзначное число:");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
 
 // if (num >= 100 && num < 1000)
 // {
