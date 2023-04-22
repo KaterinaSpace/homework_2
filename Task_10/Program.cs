@@ -6,14 +6,21 @@
 918 -> 1*/
 
 Console.WriteLine("Введите трёхзначное число:");
-int num = int.Parse(Console.ReadLine()!);
+int num = int.Parse(Console.ReadLine());
 
-if (num >= 100 && num < 1000)
+// if (num >= 100 && num < 1000)
+// {
+//   Console.WriteLine($"Вторая цифра этого числа {(num % 100 - num % 10) / 10}");
+// }
+if (num < 0)
 {
-  Console.WriteLine($"Вторая цифра этого числа {(num % 100 - num % 10) / 10}");
+  num = num * -1;
 }
-
+if(num >= 100 && num < 1000)
+{
+  Console.WriteLine($"Вторая цифра этого числа{num/10%10}");
+}
 else 
 {
-  Console.WriteLine("Это не трёхзначое число");
+  Console.WriteLine("Это не трёхзначное число");
 }
